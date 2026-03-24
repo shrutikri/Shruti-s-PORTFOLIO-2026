@@ -9,44 +9,55 @@ const qaData = [
   {
     q: "What is your main programming language?",
     a: "My core programming languages are Java, Python, and JavaScript. I am highly proficient in building scalable backends with Java and Spring Boot.",
-    keywords: "programming language languages java python js javascript main core"
+    keywords: "programming language languages java python js javascript main core stack tech"
   },
   {
     q: "Where do you currently work?",
     a: "I currently work as a Software Engineer II at FIS Global in Bengaluru, where I architect and maintain microservices-based backends handling 10,000+ daily transactions.",
-    keywords: "work experience current job company fis global role position"
+    keywords: "work experience current job company fis global role position employment career"
   },
   {
-    q: "Tell me about your performance optimization achievements.",
-    a: "At FIS Global, I optimized SQL queries and implemented connection pooling, improving throughput by 300%. I also reduced high-frequency API response times by 35% through strategic indexing on 5M+ records.",
-    keywords: "performance scalable optimization speed throughput bottleneck database sql"
+    q: "Tell me about your FIS projects and achievements.",
+    a: "At FIS Global, I worked on the Modern Banking Platform. I optimized SQL queries and connection pooling, improving throughput by 300%. I also architected a microservices backend ensuring 99.9% uptime and reduced service disruptions by 65%.",
+    keywords: "performance scalable optimization speed throughput bottleneck database sql fis global banking projects achievements work"
   },
   {
     q: "What frontend technologies do you know?",
     a: "I have experience with ReactJS, Angular, HTML5, CSS3, Bootstrap, and building responsive, dynamic designs.",
-    keywords: "frontend ui web react angular css html design"
+    keywords: "frontend ui web react reactjs angular css html design interface"
   },
   {
     q: "Are you good at algorithms and data structures?",
     a: "Yes! I have solved 250+ problems on LeetCode across Easy, Medium, and Hard difficulty levels. I have strong proficiency in Dynamic Programming, Graphs, Trees, and Two-Pointer strategies.",
-    keywords: "dsa algorithm algorithms data structures leetcode problem solving competitive"
+    keywords: "dsa algorithm algorithms data structures leetcode leet code problem solving competitive coding graph tree"
   },
   {
     q: "Do you have experience with microservices?",
     a: "Absolutely. I architected a fault-tolerant microservices backend using Event-Driven Architecture ensuring eventual consistency across 15+ distributed services.",
-    keywords: "microservices architecture micro service event driven distributed system"
+    keywords: "microservices architecture micro service event driven distributed system backend"
   },
   {
     q: "How can I contact Shruti?",
     a: "You can email Shruti at shrutiii.kumari01@gmail.com, or reach out on her LinkedIn profile found in the Navbar!",
-    keywords: "contact email phone reach linkedin hire message"
+    keywords: "contact email phone reach linkedin hire message phone number"
+  },
+  {
+    q: "What is your current CTC?",
+    a: "My current CTC is 12 LPA. I am aiming for challenging roles at big tech companies.",
+    keywords: "ctc salary compensation package pay expected current lpa remuneration money offer"
   }
 ];
 
 // Configure Fuse for fuzzy matching
 const fuse = new Fuse(qaData, {
-  keys: ['q', 'keywords'],
-  threshold: 0.4,
+  keys: [
+    { name: 'keywords', weight: 2 },
+    { name: 'q', weight: 1 },
+    { name: 'a', weight: 0.5 }
+  ],
+  threshold: 0.6,
+  ignoreLocation: true,
+  minMatchCharLength: 2,
   includeScore: true
 });
 
