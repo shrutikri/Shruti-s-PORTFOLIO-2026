@@ -88,11 +88,22 @@ const AIAssistant = () => {
 
     // Simulate AI processing delay
     setTimeout(() => {
-      const results = fuse.search(userMsg);
-      let botResponse = "I'm not exactly sure about that. Try asking about her Java experience, work at FIS Global, frontend skills, or LeetCode achievements!";
+      const lowerInput = userMsg.toLowerCase();
+      let botResponse = "I'm not exactly sure about that. Try asking about her Java experience, work at FIS Global, frontend skills, CTC, or LeetCode achievements!";
       
-      if (results.length > 0) {
-        botResponse = results[0].item.a;
+      // 1. First try direct exact keyword matching for very high accuracy on short words
+      const exactMatch = qaData.find(item => 
+        item.keywords.split(' ').some(kw => lowerInput.includes(kw))
+      );
+      
+      if (exactMatch) {
+        botResponse = exactMatch.a;
+      } else {
+        // 2. Fallback to fuzzy search for complex sentences
+        const results = fuse.search(userMsg);
+        if (results.length > 0) {
+          botResponse = results[0].item.a;
+        }
       }
       
       setMessages(prev => [...prev, { type: 'bot', text: botResponse }]);
