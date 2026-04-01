@@ -10,8 +10,8 @@ const projects = [
     description: "Designed a highly scalable URL shortening service capable of supporting 1M+ daily requests. Implemented consistent hashing for database sharding and Redis caching to minimize latency on redirection.",
     tags: ["System Design", "Redis", "Hashing", "High Availability"],
     icon: <Code />,
-    githubRef: "https://github.com/shrutikri",
-    demoRef: "#"
+    githubRef: "https://github.com/shrutikri/url-shortener-backend",
+    demoRef: "https://url-shortener-frontend-nine-rho.vercel.app/"
   },
   {
     title: "Vehicle Parking Management System",
