@@ -18,7 +18,7 @@ const qaData = [
   },
   {
     q: "Tell me about your FIS projects and achievements.",
-    a: "At FIS Global, I worked on the Modern Banking Platform. I optimized SQL queries and connection pooling, improving throughput by 300%. I also architected a microservices backend ensuring 99.9% uptime and reduced service disruptions by 65%.",
+    a: "At FIS Global, I worked on the Modern Banking Platform. I optimized SQL queries and connection pooling, improving throughput by 300%. I also built a microservices backend ensuring 99.9% uptime and reduced service disruptions by 65%.",
     keywords: "performance scalable optimization speed throughput bottleneck database sql fis global banking projects achievements work"
   },
   {
@@ -33,7 +33,7 @@ const qaData = [
   },
   {
     q: "Do you have experience with microservices?",
-    a: "Absolutely. I architected a fault-tolerant microservices backend using Event-Driven Architecture ensuring eventual consistency across 15+ distributed services.",
+    a: "Absolutely. I built a fault-tolerant microservices backend using Event-Driven Architecture ensuring eventual consistency across 15+ distributed services.",
     keywords: "microservices architecture micro service event driven distributed system backend"
   },
   {

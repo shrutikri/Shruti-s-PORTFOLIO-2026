@@ -6,7 +6,7 @@ import './Projects.css';
 const projects = [
   {
     title: "Scalable URL Shortener",
-    category: "System Design Practice",
+    category: "System Design",
     description: "Designed a highly scalable URL shortening service capable of supporting 1M+ daily requests. Implemented consistent hashing for database sharding and Redis caching to minimize latency on redirection.",
     tags: ["System Design", "Redis", "Hashing", "High Availability"],
     icon: <Code />,

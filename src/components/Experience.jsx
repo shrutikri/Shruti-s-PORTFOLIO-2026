@@ -12,7 +12,7 @@ const experiences = [
     period: "Sept 2023 – Present",
     project: "Project: Modern Banking Platform (MBP)",
     highlights: [
-      "Architected and maintained microservices-based backend using Java and Spring Boot handling 10,000+ daily transactions across loan payoff, deposits, and real-time balance updates serving 500,000+ active customers",
+      "Designed and maintained microservices-based backend using Java and Spring Boot handling 10,000+ daily transactions across loan payoff, deposits, and real-time balance updates serving 500,000+ active customers",
       "Designed fault-tolerant APIs with retry mechanisms and circuit breakers ensuring 99.9% uptime for critical banking operations, reducing service disruptions by 65%",
       "Implemented asynchronous event-driven architecture to resolve service-event sync conflicts, ensuring eventual consistency across 15+ distributed microservices",
       "Identified and resolved database bottlenecks by optimizing SQL queries and implementing connection pooling, improving throughput from 500 to 2,000 statements/hour (300% improvement)"
@@ -42,7 +42,7 @@ const experiences = [
       "Developed full-stack B2B invoice management application processing 10,000+ invoices/month using ReactJS, Java Servlets, and MySQL, reducing manual processing time by 40%",
       "Integrated machine learning prediction models (Random Forest) to auto-populate invoice fields with 85% accuracy",
       "Built responsive data grids with real-time search, sorting, pagination, and filtering, improving UI performance by 50% for 50,000+ record datasets",
-      "Architected client-server communication layer with comprehensive error handling and retry logic, ensuring data consistency across 5+ modules"
+      "Designed client-server communication layer with comprehensive error handling and retry logic, ensuring data consistency across 5+ modules"
     ]
   }
 ];
