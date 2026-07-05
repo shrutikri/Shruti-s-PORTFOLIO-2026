@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import './Experience.css';
@@ -9,40 +8,55 @@ const experiences = [
     role: "Software Engineer II",
     company: "FIS Global India Pvt. Ltd.",
     location: "Bengaluru, Karnataka",
-    period: "Sept 2023 – Present",
-    project: "Project: Modern Banking Platform (MBP)",
+    period: "Jan 2026 – Present",
+    project: "Project: Modern Banking Platform (MBP) - Serving 150k+ accounts, 50K+ daily transactions",
     highlights: [
-      "Architected and maintained microservices-based backend using Java and Spring Boot handling 10,000+ daily transactions across loan payoff, deposits, and real-time balance updates serving 500,000+ active customers",
-      "Designed fault-tolerant APIs with retry mechanisms and circuit breakers ensuring 99.9% uptime for critical banking operations, reducing service disruptions by 65%",
-      "Implemented asynchronous event-driven architecture to resolve service-event sync conflicts, ensuring eventual consistency across 15+ distributed microservices",
-      "Identified and resolved database bottlenecks by optimizing SQL queries and implementing connection pooling, improving throughput from 500 to 2,000 statements/hour (300% improvement)"
+      "Designed and delivered scalable RESTful microservices in Java/Spring Boot for loan processing, balance management, and transaction reconciliation, processing 50K+ daily transactions at under 200ms latency",
+      "Implemented Kafka-based event-driven communication between 5+ microservices, improving system throughput by 35% during peak load and ensuring eventual consistency",
+      "Reduced critical query execution time from 8s to 1.2s by re-engineering 40+ SQL queries and PL/SQL stored procedures with composite indexing, a 6.7x improvement",
+      "Optimized high-traffic read operations using Redis caching, reducing database load by 50% and improving API response times for balance inquiries",
+      "Automated reconciliation pipelines to replace manual validation workflows, eliminating 60% of manual effort and significantly reducing SLA breach risk",
+      "Developed Angular-based customer dashboard components and created Splunk dashboards for centralized log correlation and distributed tracing"
     ]
   },
   {
     id: 2,
-    role: "IT Trainee",
+    role: "Software Engineer I",
     company: "FIS Global India Pvt. Ltd.",
     location: "Bengaluru, Karnataka",
-    period: "Sept 2023 – Dec 2023",
-    project: "",
+    period: "Jan 2025 – Jan 2026",
+    project: "Project: Modern Banking Platform (MBP)",
     highlights: [
-      "Completed intensive 3-month full-stack training with hands-on project implementation",
-      "Built banking application simulating real-world operations using Java, Spring Boot, and H2 database",
-      "Gained domain expertise in US Banking regulations and Core Banking operations"
+      "Owned development of 8+ REST API endpoints for transaction history and account management modules, achieving under 150ms p99 latency in load testing",
+      "Contributed to migration of monolithic billing module to event-driven microservice, reducing deployment blast radius and enabling independent scaling",
+      "Built and maintained core backend modules for deposit, withdrawal, and fund transfer flows using Java and Spring Boot, and resolved 15+ production bugs",
+      "Wrote comprehensive integration test suites covering edge cases in fund transfer and reconciliation, improving test coverage from 60% to 80%",
+      "Optimized 10+ slow SQL queries causing latency spikes in high-traffic reporting endpoints, improving response times by up to 4x"
     ]
   },
   {
     id: 3,
-    role: "Software Engineering Intern",
-    company: "HighRadius",
-    location: "Remote",
-    period: "Jan 2022 – April 2022",
-    project: "AI-Enabled Fintech B2B Invoice Management Platform",
+    role: "IT Trainee",
+    company: "FIS Global India Pvt. Ltd.",
+    location: "Bengaluru, Karnataka",
+    period: "Sep 2023 – Jan 2025",
+    project: "",
     highlights: [
-      "Developed full-stack B2B invoice management application processing 10,000+ invoices/month using ReactJS, Java Servlets, and MySQL, reducing manual processing time by 40%",
-      "Integrated machine learning prediction models (Random Forest) to auto-populate invoice fields with 85% accuracy",
-      "Built responsive data grids with real-time search, sorting, pagination, and filtering, improving UI performance by 50% for 50,000+ record datasets",
-      "Architected client-server communication layer with comprehensive error handling and retry logic, ensuring data consistency across 5+ modules"
+      "Completed intensive full-stack bootcamp covering Java, Spring Boot, microservices, React, and REST API design",
+      "Delivered a banking simulation app with Spring Security/JWT auth and full Swagger documentation"
+    ]
+  },
+  {
+    id: 4,
+    role: "Software Engineering Intern",
+    company: "HighRadius Pvt. Ltd.",
+    location: "Remote",
+    period: "Jan 2022 – Apr 2022",
+    project: "Project: B2B Invoice Management Platform",
+    highlights: [
+      "Designed and built a full-stack AI-enabled B2B Invoice Management Platform using ReactJS, Java Servlets, and MySQL, handling 1,000+ invoice records",
+      "Integrated an ML-based invoice classification API, boosting processing efficiency by 35% and reducing manual classification overhead",
+      "Architected a normalized database schema with optimized SQL queries, achieving under 1.5s page load times across dynamic data tables"
     ]
   }
 ];

@@ -1,14 +1,13 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code, Layout, Layers } from 'lucide-react';
 import './Projects.css';
 
 const projects = [
   {
-    title: "Scalable URL Shortener",
-    category: "System Design Practice",
-    description: "Designed a highly scalable URL shortening service capable of supporting 1M+ daily requests. Implemented consistent hashing for database sharding and Redis caching to minimize latency on redirection.",
-    tags: ["System Design", "Redis", "Hashing", "High Availability"],
+    title: "Distributed Rate Limiter",
+    category: "System Design & Backend",
+    description: "Developed a production-grade distributed rate limiting service using token bucket and sliding window algorithms, deployed on AWS EC2 with Redis as the shared state store. Handles 10K+ requests/sec, dynamic rate limiting rules, and graceful degradation.",
+    tags: ["Java", "Spring Boot", "Redis", "Docker", "AWS EC2", "System Design"],
     icon: <Code />,
     githubRef: "https://github.com/shrutikri",
     demoRef: "#"
@@ -23,10 +22,10 @@ const projects = [
     demoRef: "#"
   },
   {
-    title: "Core Banking Simulator",
-    category: "Backend Development",
-    description: "Built a fully functional banking application simulating real-world operations using Java, Spring Boot, and H2 database. Created during intensive full-stack training, gaining deep domain expertise in Banking regulations.",
-    tags: ["Java", "Spring Boot", "H2 Database", "Full Stack"],
+    title: "Banking System - Full System Design",
+    category: "System Design & Microservices",
+    description: "Created end-to-end HLD and LLD for a distributed banking platform covering account management, payments, fraud detection, and notifications, designed to support 1M+ users (Kafka, Redis, PostgreSQL sharding, Saga, Circuit Breaker).",
+    tags: ["Java", "Spring Boot", "Kafka", "Redis", "PostgreSQL", "AWS", "System Design"],
     icon: <Layers />,
     githubRef: "https://github.com/shrutikri",
     demoRef: "#"

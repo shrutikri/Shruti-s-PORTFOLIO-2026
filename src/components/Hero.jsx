@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight, Code2 } from 'lucide-react';
 import './Hero.css';
@@ -23,7 +22,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Hi there, I'm
+            Hi there, I&apos;m
           </motion.div>
           
           <motion.h1 
@@ -50,8 +49,8 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
-            I build high-performance distributed systems, scalable backend services, and robust APIs. 
-            Currently optimizing banking platforms at FIS Global, managing 10,000+ daily transactions.
+            I build high-scale distributed systems, scalable backend services, and robust microservices. 
+            Currently optimizing banking platforms at FIS Global, serving 150,000+ accounts with 50K+ daily transactions at sub-200ms response times.
           </motion.p>
 
           <motion.div 

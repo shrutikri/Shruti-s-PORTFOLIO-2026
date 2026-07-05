@@ -1,28 +1,27 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Server, Database, Cloud } from 'lucide-react';
 import './Skills.css';
 
 const skillCategories = [
   {
-    title: "Languages \u0026 Core",
+    title: "Languages & CS Core",
     icon: <Code2 className="skill-icon" />,
-    skills: ["Java", "Python", "JavaScript", "SQL", "C/C++", "Data Structures", "Algorithms"]
+    skills: ["Java", "JavaScript", "Python", "SQL", "C++", "OOP", "Design Patterns", "Multithreading", "Data Structures & Algorithms"]
   },
   {
-    title: "Backend \u0026 Architecture",
+    title: "Backend & System Design",
     icon: <Server className="skill-icon" />,
-    skills: ["Spring Boot", "Hibernate", "Microservices", "REST APIs", "Node.js", "Event-Driven Architecture", "High Availability Design"]
+    skills: ["Spring Boot", "Hibernate", "Microservices", "RESTful APIs", "Kafka", "Node.js", "Distributed Caching", "Rate Limiting", "Event-Driven Architecture", "Database Sharding", "HLD & LLD"]
   },
   {
-    title: "Databases \u0026 Storage",
+    title: "Databases & Cloud",
     icon: <Database className="skill-icon" />,
-    skills: ["Oracle", "MySQL", "PostgreSQL", "MongoDB", "PL/SQL", "Query Optimization", "Database Indexing"]
+    skills: ["PostgreSQL", "MySQL", "Oracle", "MongoDB", "Redis", "Firebase", "AWS (EC2, S3, Lambda, API Gateway)", "Docker", "CI/CD (Jenkins, Git)"]
   },
   {
-    title: "DevOps \u0026 Tools",
+    title: "Frontend, Observability & Tools",
     icon: <Cloud className="skill-icon" />,
-    skills: ["Splunk", "JUnit", "Postman", "Git", "JIRA", "CI/CD", "Linux", "Swagger", "ReactJS", "Angular"]
+    skills: ["React", "Angular", "HTML5 & CSS3", "Splunk", "Postman", "Swagger / OpenAPI", "JUnit", "JIRA", "Agile / Scrum"]
   }
 ];
 

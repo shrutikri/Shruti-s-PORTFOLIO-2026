@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, X, Send, Sparkles } from 'lucide-react';
+import { X, Send, Sparkles } from 'lucide-react';
 import Fuse from 'fuse.js';
 import './AIAssistant.css';
 
@@ -8,33 +8,38 @@ import './AIAssistant.css';
 const qaData = [
   {
     q: "What is your main programming language?",
-    a: "My core programming languages are Java, Python, and JavaScript. I am highly proficient in building scalable backends with Java and Spring Boot.",
+    a: "My core programming languages are Java, JavaScript, Python, SQL, and C++. I have deep expertise in Java and Spring Boot for building backend services.",
     keywords: "programming language languages java python js javascript main core stack tech"
   },
   {
     q: "Where do you currently work?",
-    a: "I currently work as a Software Engineer II at FIS Global in Bengaluru, where I architect and maintain microservices-based backends handling 10,000+ daily transactions.",
+    a: "I work as a Software Engineer II at FIS Global in Bengaluru. I have been with FIS Global for 2.8+ years (since September 2023), progressing from IT Trainee to Software Engineer I and now Software Engineer II.",
     keywords: "work experience current job company fis global role position employment career"
   },
   {
     q: "Tell me about your FIS projects and achievements.",
-    a: "At FIS Global, I worked on the Modern Banking Platform. I optimized SQL queries and connection pooling, improving throughput by 300%. I also architected a microservices backend ensuring 99.9% uptime and reduced service disruptions by 65%.",
+    a: "At FIS Global, I work on the Modern Banking Platform, a distributed system serving 150K+ accounts and 50K+ daily transactions at under 200ms latency. I implemented Kafka-based messaging, optimized SQL queries from 8s to 1.2s (a 6.7x improvement), introduced Redis caching to reduce database load by 50%, and automated reconciliation pipelines eliminating 60% of manual effort.",
     keywords: "performance scalable optimization speed throughput bottleneck database sql fis global banking projects achievements work"
   },
   {
     q: "What frontend technologies do you know?",
-    a: "I have experience with ReactJS, Angular, HTML5, CSS3, Bootstrap, and building responsive, dynamic designs.",
+    a: "I have hands-on experience with React, Angular, HTML5, and CSS3. At FIS Global, I developed Angular-based customer dashboard components for transaction tracking and account management.",
     keywords: "frontend ui web react reactjs angular css html design interface"
   },
   {
     q: "Are you good at algorithms and data structures?",
-    a: "Yes! I have solved 250+ problems on LeetCode across Easy, Medium, and Hard difficulty levels. I have strong proficiency in Dynamic Programming, Graphs, Trees, and Two-Pointer strategies.",
+    a: "Yes! I have solved 400+ problems on LeetCode. I have strong problem-solving skills, particularly in Graphs, Dynamic Programming, Trees, Sliding Window, and Binary Search.",
     keywords: "dsa algorithm algorithms data structures leetcode leet code problem solving competitive coding graph tree"
   },
   {
     q: "Do you have experience with microservices?",
-    a: "Absolutely. I architected a fault-tolerant microservices backend using Event-Driven Architecture ensuring eventual consistency across 15+ distributed services.",
+    a: "Absolutely. I design and deliver scalable microservices using Java/Spring Boot and Kafka. I have worked on async event-driven systems, implemented patterns like Saga and Circuit Breaker, and migrated monolithic modules to independent services.",
     keywords: "microservices architecture micro service event driven distributed system backend"
+  },
+  {
+    q: "What projects have you built?",
+    a: "My key projects include a Distributed Rate Limiter (token bucket/sliding window, handling 10K+ req/sec on AWS EC2), a fully designed Banking System (using Saga, Circuit Breaker, PostgreSQL sharding), and a Vehicle Parking Management mobile app in Flutter with optical plate recognition and Firebase.",
+    keywords: "projects rate limiter banking system vehicle parking url shortener simulator"
   },
   {
     q: "How can I contact Shruti?",
@@ -43,7 +48,7 @@ const qaData = [
   },
   {
     q: "What is your current CTC?",
-    a: "My current CTC is 12 LPA. I am aiming for challenging roles at big tech companies.",
+    a: "My current CTC is 12 LPA. I am aiming for senior engineering roles at top product companies.",
     keywords: "ctc salary compensation package pay expected current lpa remuneration money offer"
   }
 ];

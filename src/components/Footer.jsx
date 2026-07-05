@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Mail, Code2 } from 'lucide-react';
 import './Footer.css';
 

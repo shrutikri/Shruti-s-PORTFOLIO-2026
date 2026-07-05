@@ -1,7 +1,7 @@
-import React from 'react';
 import { Github, Linkedin, Mail, Code2 } from 'lucide-react';
 import './Navbar.css';
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ isScrolled }) => {
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
