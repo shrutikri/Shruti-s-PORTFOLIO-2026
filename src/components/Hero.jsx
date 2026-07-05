@@ -79,7 +79,7 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/shruti-k-674967a1/" target="_blank" rel="noopener noreferrer">
               <Linkedin />
             </a>
-            <a href="https://leetcode.com/u/shruti_kri01/" target="_blank" rel="noopener noreferrer">
+            <a href="https://leetcode.com/u/shruti_kri18/" target="_blank" rel="noopener noreferrer">
               <Code2 />
             </a>
             <a href="mailto:shrutiii.kumari01@gmail.com">
